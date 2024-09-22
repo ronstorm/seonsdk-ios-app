@@ -1,2 +1,2 @@
-# seonsdk-ios-app
-A sample iOS App that integrates SeonSDK framework
+# SeonSDK iOS App
+A sample iOS Application that integrates SeonSDK framework

@@ -1,0 +1,174 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name SeonSDK
+import AVFoundation
+import Combine
+import LocalAuthentication
+@_exported import SeonSDK
+import Swift
+import SwiftUI
+import UIKit.UIImage
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol PhotoStorageProvider {
+  func savePhoto(_ photo: UIKit.UIImage) -> Combine.AnyPublisher<Swift.Void, SeonSDK.PhotoStorageError>
+  func fetchPhotos() -> Combine.AnyPublisher<[UIKit.UIImage], SeonSDK.PhotoStorageError>
+  func deletePhoto(at index: Swift.Int) -> Combine.AnyPublisher<Swift.Void, SeonSDK.PhotoStorageError>
+}
+public enum PhotoStorageError : Swift.Error, Foundation.LocalizedError {
+  case folderCreationFailed
+  case saveFailed
+  case loadFailed
+  case deleteFailed
+  case dataConversionFailed
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (a: SeonSDK.PhotoStorageError, b: SeonSDK.PhotoStorageError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol CameraServiceProvider {
+  func capturePhoto() -> Combine.AnyPublisher<UIKit.UIImage, SeonSDK.CameraServiceError>
+  func startSession()
+  func stopSession()
+  func toggleFlashMode()
+  func switchCamera()
+  func getPreviewLayer() -> AVFoundation.AVCaptureVideoPreviewLayer?
+  var flashMode: AVFoundation.AVCaptureDevice.FlashMode { get }
+}
+public enum CameraServiceError : Swift.Error, Foundation.LocalizedError {
+  case photoOutputNotInitialized
+  case captureFailed(any Swift.Error)
+  case unknown
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_Concurrency.MainActor(unsafe) public struct CameraView : SwiftUI.View {
+  @SwiftUI.StateObject @_projectedValueProperty($viewModel) @_Concurrency.MainActor(unsafe) public var viewModel: SeonSDK.CameraViewModel {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var $viewModel: SwiftUI.ObservedObject<SeonSDK.CameraViewModel>.Wrapper {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var onCapture: ((UIKit.UIImage) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public init(onCapture: ((UIKit.UIImage) -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7SeonSDK10CameraViewV4bodyQrvp", 0) __
+}
+public class AuthService : SeonSDK.AuthServiceProvider {
+  public init()
+  public func authenticate() -> Combine.AnyPublisher<Swift.Bool, SeonSDK.AuthServiceError>
+  @objc deinit
+}
+public class PhotoStorageService : SeonSDK.PhotoStorageProvider {
+  public init()
+  public func savePhoto(_ image: UIKit.UIImage) -> Combine.AnyPublisher<Swift.Void, SeonSDK.PhotoStorageError>
+  public func fetchPhotos() -> Combine.AnyPublisher<[UIKit.UIImage], SeonSDK.PhotoStorageError>
+  public func deletePhoto(at index: Swift.Int) -> Combine.AnyPublisher<Swift.Void, SeonSDK.PhotoStorageError>
+  @objc deinit
+}
+public class CameraViewModel : Combine.ObservableObject {
+  @Combine.Published @_projectedValueProperty($capturedImage) public var capturedImage: UIKit.UIImage? {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $capturedImage: Combine.Published<UIKit.UIImage?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($showError) public var showError: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $showError: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($errorMessage) public var errorMessage: Swift.String {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $errorMessage: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isCameraReady) public var isCameraReady: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isCameraReady: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public var cameraService: any SeonSDK.CameraServiceProvider
+  public init(cameraService: any SeonSDK.CameraServiceProvider = CameraService())
+  public var flashIcon: Swift.String {
+    get
+  }
+  public func startCamera()
+  public func stopCamera()
+  public func toggleFlash()
+  public func switchCamera()
+  public func capturePhoto()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public protocol AuthServiceProvider {
+  func authenticate() -> Combine.AnyPublisher<Swift.Bool, SeonSDK.AuthServiceError>
+}
+public enum AuthServiceError : Swift.Error, Foundation.LocalizedError {
+  case biometricUnavailable
+  case authenticationFailed(any Swift.Error)
+  case unknownError
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class CameraService : ObjectiveC.NSObject, SeonSDK.CameraServiceProvider {
+  public var flashMode: AVFoundation.AVCaptureDevice.FlashMode
+  @objc override dynamic public init()
+  public func setupSession()
+  public func switchCamera()
+  public func toggleFlashMode()
+  public func startSession()
+  public func stopSession()
+  public func capturePhoto() -> Combine.AnyPublisher<UIKit.UIImage, SeonSDK.CameraServiceError>
+  public func getPreviewLayer() -> AVFoundation.AVCaptureVideoPreviewLayer?
+  @objc deinit
+}
+extension SeonSDK.CameraService : AVFoundation.AVCapturePhotoCaptureDelegate {
+  @objc dynamic public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVFoundation.AVCapturePhoto, error: (any Swift.Error)?)
+}
+public class PhotoSDK {
+  public init(authService: any SeonSDK.AuthServiceProvider = AuthService(), photoStorageService: any SeonSDK.PhotoStorageProvider = PhotoStorageService())
+  public func takePhoto(completion: @escaping (Swift.Result<UIKit.UIImage, any Swift.Error>) -> Swift.Void) -> some SwiftUI.View
+  
+  public func accessPhotos(onAuthenticated: @escaping (Swift.Result<SwiftUI.AnyView, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+extension SeonSDK.PhotoStorageError : Swift.Equatable {}
+extension SeonSDK.PhotoStorageError : Swift.Hashable {}

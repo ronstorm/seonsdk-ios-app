@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28623D0E2CA0B3AF00C15274 /* SeonSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28623D0C2CA0B39E00C15274 /* SeonSDK.xcframework */; };
+		28623D0F2CA0B3AF00C15274 /* SeonSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28623D0C2CA0B39E00C15274 /* SeonSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28D7332D2C98CE4B0017DEED /* SampleSeonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D7332C2C98CE4B0017DEED /* SampleSeonAppApp.swift */; };
 		28D7332F2C98CE4B0017DEED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D7332E2C98CE4B0017DEED /* ContentView.swift */; };
 		28D733312C98CE4D0017DEED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D733302C98CE4D0017DEED /* Assets.xcassets */; };
@@ -15,8 +17,6 @@
 		28D733482C98CE4D0017DEED /* SampleSeonAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D733472C98CE4D0017DEED /* SampleSeonAppUITests.swift */; };
 		28D7334A2C98CE4D0017DEED /* SampleSeonAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D733492C98CE4D0017DEED /* SampleSeonAppUITestsLaunchTests.swift */; };
 		28D733812C98E1700017DEED /* PhotoSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D733802C98E1700017DEED /* PhotoSDKManager.swift */; };
-		28D733E62C9A52570017DEED /* SeonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D733E42C9A52510017DEED /* SeonSDK.framework */; };
-		28D733E72C9A52570017DEED /* SeonSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D733E42C9A52510017DEED /* SeonSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				28D733E72C9A52570017DEED /* SeonSDK.framework in Embed Frameworks */,
+				28623D0F2CA0B3AF00C15274 /* SeonSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		28623D0C2CA0B39E00C15274 /* SeonSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SeonSDK.xcframework; sourceTree = "<group>"; };
 		28D733292C98CE4B0017DEED /* SampleSeonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleSeonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D7332C2C98CE4B0017DEED /* SampleSeonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSeonAppApp.swift; sourceTree = "<group>"; };
 		28D7332E2C98CE4B0017DEED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		28D733472C98CE4D0017DEED /* SampleSeonAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSeonAppUITests.swift; sourceTree = "<group>"; };
 		28D733492C98CE4D0017DEED /* SampleSeonAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSeonAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		28D733802C98E1700017DEED /* PhotoSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSDKManager.swift; sourceTree = "<group>"; };
-		28D733E42C9A52510017DEED /* SeonSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SeonSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28D733E62C9A52570017DEED /* SeonSDK.framework in Frameworks */,
+				28623D0E2CA0B3AF00C15274 /* SeonSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 		28D733202C98CE4B0017DEED = {
 			isa = PBXGroup;
 			children = (
-				28D733E42C9A52510017DEED /* SeonSDK.framework */,
+				28623D0C2CA0B39E00C15274 /* SeonSDK.xcframework */,
 				28D7332B2C98CE4B0017DEED /* SampleSeonApp */,
 				28D7333C2C98CE4D0017DEED /* SampleSeonAppTests */,
 				28D733462C98CE4D0017DEED /* SampleSeonAppUITests */,

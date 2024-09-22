@@ -1,0 +1,3944 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit.UIImage",
+        "printedName": "UIKit.UIImage",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PhotoStorageProvider",
+        "printedName": "PhotoStorageProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "savePhoto",
+            "printedName": "savePhoto(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(), SeonSDK.PhotoStorageError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK20PhotoStorageProviderP04saveC0y7Combine12AnyPublisherVyytAA0cD5ErrorOGSo7UIImageCF",
+            "mangledName": "$s7SeonSDK20PhotoStorageProviderP04saveC0y7Combine12AnyPublisherVyytAA0cD5ErrorOGSo7UIImageCF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.PhotoStorageProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.PhotoStorageProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchPhotos",
+            "printedName": "fetchPhotos()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<[UIKit.UIImage], SeonSDK.PhotoStorageError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIImage]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK20PhotoStorageProviderP11fetchPhotos7Combine12AnyPublisherVySaySo7UIImageCGAA0cD5ErrorOGyF",
+            "mangledName": "$s7SeonSDK20PhotoStorageProviderP11fetchPhotos7Combine12AnyPublisherVySaySo7UIImageCGAA0cD5ErrorOGyF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.PhotoStorageProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.PhotoStorageProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deletePhoto",
+            "printedName": "deletePhoto(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(), SeonSDK.PhotoStorageError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK20PhotoStorageProviderP06deleteC02at7Combine12AnyPublisherVyytAA0cD5ErrorOGSi_tF",
+            "mangledName": "$s7SeonSDK20PhotoStorageProviderP06deleteC02at7Combine12AnyPublisherVyytAA0cD5ErrorOGSi_tF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.PhotoStorageProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.PhotoStorageProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7SeonSDK20PhotoStorageProviderP",
+        "mangledName": "$s7SeonSDK20PhotoStorageProviderP",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PhotoStorageError",
+        "printedName": "PhotoStorageError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "folderCreationFailed",
+            "printedName": "folderCreationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.PhotoStorageError.Type) -> SeonSDK.PhotoStorageError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.PhotoStorageError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhotoStorageError",
+                        "printedName": "SeonSDK.PhotoStorageError",
+                        "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK17PhotoStorageErrorO20folderCreationFailedyA2CmF",
+            "mangledName": "$s7SeonSDK17PhotoStorageErrorO20folderCreationFailedyA2CmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "saveFailed",
+            "printedName": "saveFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.PhotoStorageError.Type) -> SeonSDK.PhotoStorageError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.PhotoStorageError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhotoStorageError",
+                        "printedName": "SeonSDK.PhotoStorageError",
+                        "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK17PhotoStorageErrorO10saveFailedyA2CmF",
+            "mangledName": "$s7SeonSDK17PhotoStorageErrorO10saveFailedyA2CmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loadFailed",
+            "printedName": "loadFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.PhotoStorageError.Type) -> SeonSDK.PhotoStorageError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.PhotoStorageError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhotoStorageError",
+                        "printedName": "SeonSDK.PhotoStorageError",
+                        "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK17PhotoStorageErrorO10loadFailedyA2CmF",
+            "mangledName": "$s7SeonSDK17PhotoStorageErrorO10loadFailedyA2CmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deleteFailed",
+            "printedName": "deleteFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.PhotoStorageError.Type) -> SeonSDK.PhotoStorageError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.PhotoStorageError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhotoStorageError",
+                        "printedName": "SeonSDK.PhotoStorageError",
+                        "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK17PhotoStorageErrorO12deleteFailedyA2CmF",
+            "mangledName": "$s7SeonSDK17PhotoStorageErrorO12deleteFailedyA2CmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dataConversionFailed",
+            "printedName": "dataConversionFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.PhotoStorageError.Type) -> SeonSDK.PhotoStorageError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.PhotoStorageError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhotoStorageError",
+                        "printedName": "SeonSDK.PhotoStorageError",
+                        "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK17PhotoStorageErrorO20dataConversionFailedyA2CmF",
+            "mangledName": "$s7SeonSDK17PhotoStorageErrorO20dataConversionFailedyA2CmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK17PhotoStorageErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s7SeonSDK17PhotoStorageErrorO16errorDescriptionSSSgvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK17PhotoStorageErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s7SeonSDK17PhotoStorageErrorO16errorDescriptionSSSgvg",
+                "moduleName": "SeonSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PhotoStorageError",
+                "printedName": "SeonSDK.PhotoStorageError",
+                "usr": "s:7SeonSDK17PhotoStorageErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PhotoStorageError",
+                "printedName": "SeonSDK.PhotoStorageError",
+                "usr": "s:7SeonSDK17PhotoStorageErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK17PhotoStorageErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7SeonSDK17PhotoStorageErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "SeonSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK17PhotoStorageErrorO9hashValueSivp",
+            "mangledName": "$s7SeonSDK17PhotoStorageErrorO9hashValueSivp",
+            "moduleName": "SeonSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK17PhotoStorageErrorO9hashValueSivg",
+                "mangledName": "$s7SeonSDK17PhotoStorageErrorO9hashValueSivg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK17PhotoStorageErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7SeonSDK17PhotoStorageErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "SeonSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7SeonSDK17PhotoStorageErrorO",
+        "mangledName": "$s7SeonSDK17PhotoStorageErrorO",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIImage",
+        "printedName": "UIKit.UIImage",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraServiceProvider",
+        "printedName": "CameraServiceProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "capturePhoto",
+            "printedName": "capturePhoto()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<UIKit.UIImage, SeonSDK.CameraServiceError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraServiceError",
+                    "printedName": "SeonSDK.CameraServiceError",
+                    "usr": "s:7SeonSDK18CameraServiceErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK21CameraServiceProviderP12capturePhoto7Combine12AnyPublisherVySo7UIImageCAA0cD5ErrorOGyF",
+            "mangledName": "$s7SeonSDK21CameraServiceProviderP12capturePhoto7Combine12AnyPublisherVySo7UIImageCAA0cD5ErrorOGyF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.CameraServiceProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.CameraServiceProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startSession",
+            "printedName": "startSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK21CameraServiceProviderP12startSessionyyF",
+            "mangledName": "$s7SeonSDK21CameraServiceProviderP12startSessionyyF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.CameraServiceProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.CameraServiceProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopSession",
+            "printedName": "stopSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK21CameraServiceProviderP11stopSessionyyF",
+            "mangledName": "$s7SeonSDK21CameraServiceProviderP11stopSessionyyF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.CameraServiceProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.CameraServiceProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFlashMode",
+            "printedName": "toggleFlashMode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK21CameraServiceProviderP15toggleFlashModeyyF",
+            "mangledName": "$s7SeonSDK21CameraServiceProviderP15toggleFlashModeyyF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.CameraServiceProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.CameraServiceProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "switchCamera",
+            "printedName": "switchCamera()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK21CameraServiceProviderP06switchC0yyF",
+            "mangledName": "$s7SeonSDK21CameraServiceProviderP06switchC0yyF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.CameraServiceProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.CameraServiceProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPreviewLayer",
+            "printedName": "getPreviewLayer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVCaptureVideoPreviewLayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCaptureVideoPreviewLayer",
+                    "printedName": "AVFoundation.AVCaptureVideoPreviewLayer",
+                    "usr": "c:objc(cs)AVCaptureVideoPreviewLayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK21CameraServiceProviderP15getPreviewLayerSo014AVCaptureVideogH0CSgyF",
+            "mangledName": "$s7SeonSDK21CameraServiceProviderP15getPreviewLayerSo014AVCaptureVideogH0CSgyF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.CameraServiceProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.CameraServiceProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "flashMode",
+            "printedName": "flashMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlashMode",
+                "printedName": "AVFoundation.AVCaptureDevice.FlashMode",
+                "usr": "c:@E@AVCaptureFlashMode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK21CameraServiceProviderP9flashModeSo014AVCaptureFlashG0Vvp",
+            "mangledName": "$s7SeonSDK21CameraServiceProviderP9flashModeSo014AVCaptureFlashG0Vvp",
+            "moduleName": "SeonSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlashMode",
+                    "printedName": "AVFoundation.AVCaptureDevice.FlashMode",
+                    "usr": "c:@E@AVCaptureFlashMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK21CameraServiceProviderP9flashModeSo014AVCaptureFlashG0Vvg",
+                "mangledName": "$s7SeonSDK21CameraServiceProviderP9flashModeSo014AVCaptureFlashG0Vvg",
+                "moduleName": "SeonSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.CameraServiceProvider>",
+                "sugared_genericSig": "<Self where Self : SeonSDK.CameraServiceProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7SeonSDK21CameraServiceProviderP",
+        "mangledName": "$s7SeonSDK21CameraServiceProviderP",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraServiceError",
+        "printedName": "CameraServiceError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "photoOutputNotInitialized",
+            "printedName": "photoOutputNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.CameraServiceError.Type) -> SeonSDK.CameraServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraServiceError",
+                    "printedName": "SeonSDK.CameraServiceError",
+                    "usr": "s:7SeonSDK18CameraServiceErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.CameraServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraServiceError",
+                        "printedName": "SeonSDK.CameraServiceError",
+                        "usr": "s:7SeonSDK18CameraServiceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK18CameraServiceErrorO25photoOutputNotInitializedyA2CmF",
+            "mangledName": "$s7SeonSDK18CameraServiceErrorO25photoOutputNotInitializedyA2CmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "captureFailed",
+            "printedName": "captureFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.CameraServiceError.Type) -> (any Swift.Error) -> SeonSDK.CameraServiceError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> SeonSDK.CameraServiceError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraServiceError",
+                        "printedName": "SeonSDK.CameraServiceError",
+                        "usr": "s:7SeonSDK18CameraServiceErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.CameraServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraServiceError",
+                        "printedName": "SeonSDK.CameraServiceError",
+                        "usr": "s:7SeonSDK18CameraServiceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK18CameraServiceErrorO13captureFailedyACs0E0_pcACmF",
+            "mangledName": "$s7SeonSDK18CameraServiceErrorO13captureFailedyACs0E0_pcACmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.CameraServiceError.Type) -> SeonSDK.CameraServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraServiceError",
+                    "printedName": "SeonSDK.CameraServiceError",
+                    "usr": "s:7SeonSDK18CameraServiceErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.CameraServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraServiceError",
+                        "printedName": "SeonSDK.CameraServiceError",
+                        "usr": "s:7SeonSDK18CameraServiceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK18CameraServiceErrorO7unknownyA2CmF",
+            "mangledName": "$s7SeonSDK18CameraServiceErrorO7unknownyA2CmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK18CameraServiceErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s7SeonSDK18CameraServiceErrorO16errorDescriptionSSSgvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK18CameraServiceErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s7SeonSDK18CameraServiceErrorO16errorDescriptionSSSgvg",
+                "moduleName": "SeonSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7SeonSDK18CameraServiceErrorO",
+        "mangledName": "$s7SeonSDK18CameraServiceErrorO",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraView",
+        "printedName": "CameraView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "viewModel",
+            "printedName": "viewModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraViewModel",
+                "printedName": "SeonSDK.CameraViewModel",
+                "usr": "s:7SeonSDK15CameraViewModelC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK10CameraViewV9viewModelAA0cdF0Cvp",
+            "mangledName": "$s7SeonSDK10CameraViewV9viewModelAA0cdF0Cvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "Custom",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraViewModel",
+                    "printedName": "SeonSDK.CameraViewModel",
+                    "usr": "s:7SeonSDK15CameraViewModelC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK10CameraViewV9viewModelAA0cdF0Cvg",
+                "mangledName": "$s7SeonSDK10CameraViewV9viewModelAA0cdF0Cvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$viewModel",
+            "printedName": "$viewModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Wrapper",
+                "printedName": "SwiftUI.ObservedObject<SeonSDK.CameraViewModel>.Wrapper",
+                "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK10CameraViewV10$viewModel7SwiftUI14ObservedObjectV7WrapperVyAA0cdF0C_Gvp",
+            "mangledName": "$s7SeonSDK10CameraViewV10$viewModel7SwiftUI14ObservedObjectV7WrapperVyAA0cdF0C_Gvp",
+            "moduleName": "SeonSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Wrapper",
+                    "printedName": "SwiftUI.ObservedObject<SeonSDK.CameraViewModel>.Wrapper",
+                    "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK10CameraViewV10$viewModel7SwiftUI14ObservedObjectV7WrapperVyAA0cdF0C_Gvg",
+                "mangledName": "$s7SeonSDK10CameraViewV10$viewModel7SwiftUI14ObservedObjectV7WrapperVyAA0cdF0C_Gvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onCapture",
+            "printedName": "onCapture",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIImage) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIImage) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK10CameraViewV9onCaptureySo7UIImageCcSgvp",
+            "mangledName": "$s7SeonSDK10CameraViewV9onCaptureySo7UIImageCcSgvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIImage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIImage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIImage",
+                            "printedName": "UIKit.UIImage",
+                            "usr": "c:objc(cs)UIImage"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK10CameraViewV9onCaptureySo7UIImageCcSgvg",
+                "mangledName": "$s7SeonSDK10CameraViewV9onCaptureySo7UIImageCcSgvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIImage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIImage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIImage",
+                            "printedName": "UIKit.UIImage",
+                            "usr": "c:objc(cs)UIImage"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK10CameraViewV9onCaptureySo7UIImageCcSgvs",
+                "mangledName": "$s7SeonSDK10CameraViewV9onCaptureySo7UIImageCcSgvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK10CameraViewV9onCaptureySo7UIImageCcSgvM",
+                "mangledName": "$s7SeonSDK10CameraViewV9onCaptureySo7UIImageCcSgvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(onCapture:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraView",
+                "printedName": "SeonSDK.CameraView",
+                "usr": "s:7SeonSDK10CameraViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIImage) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIImage) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7SeonSDK10CameraViewV9onCaptureACySo7UIImageCcSg_tcfc",
+            "mangledName": "$s7SeonSDK10CameraViewV9onCaptureACySo7UIImageCcSg_tcfc",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK10CameraViewV4bodyQrvp",
+            "mangledName": "$s7SeonSDK10CameraViewV4bodyQrvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK10CameraViewV4bodyQrvg",
+                "mangledName": "$s7SeonSDK10CameraViewV4bodyQrvg",
+                "moduleName": "SeonSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7SeonSDK10CameraViewV",
+        "mangledName": "$s7SeonSDK10CameraViewV",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthService",
+        "printedName": "AuthService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthService",
+                "printedName": "SeonSDK.AuthService",
+                "usr": "s:7SeonSDK11AuthServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7SeonSDK11AuthServiceCACycfc",
+            "mangledName": "$s7SeonSDK11AuthServiceCACycfc",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "authenticate",
+            "printedName": "authenticate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.Bool, SeonSDK.AuthServiceError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthServiceError",
+                    "printedName": "SeonSDK.AuthServiceError",
+                    "usr": "s:7SeonSDK16AuthServiceErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK11AuthServiceC12authenticate7Combine12AnyPublisherVySbAA0cD5ErrorOGyF",
+            "mangledName": "$s7SeonSDK11AuthServiceC12authenticate7Combine12AnyPublisherVySbAA0cD5ErrorOGyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7SeonSDK11AuthServiceC",
+        "mangledName": "$s7SeonSDK11AuthServiceC",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AuthServiceProvider",
+            "printedName": "AuthServiceProvider",
+            "usr": "s:7SeonSDK19AuthServiceProviderP",
+            "mangledName": "$s7SeonSDK19AuthServiceProviderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIImage",
+        "printedName": "UIKit.UIImage",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIImage",
+        "printedName": "UIKit.UIImage",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PhotoStorageService",
+        "printedName": "PhotoStorageService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PhotoStorageService",
+                "printedName": "SeonSDK.PhotoStorageService",
+                "usr": "s:7SeonSDK19PhotoStorageServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7SeonSDK19PhotoStorageServiceCACycfc",
+            "mangledName": "$s7SeonSDK19PhotoStorageServiceCACycfc",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "savePhoto",
+            "printedName": "savePhoto(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(), SeonSDK.PhotoStorageError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK19PhotoStorageServiceC04saveC0y7Combine12AnyPublisherVyytAA0cD5ErrorOGSo7UIImageCF",
+            "mangledName": "$s7SeonSDK19PhotoStorageServiceC04saveC0y7Combine12AnyPublisherVyytAA0cD5ErrorOGSo7UIImageCF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchPhotos",
+            "printedName": "fetchPhotos()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<[UIKit.UIImage], SeonSDK.PhotoStorageError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIImage]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK19PhotoStorageServiceC11fetchPhotos7Combine12AnyPublisherVySaySo7UIImageCGAA0cD5ErrorOGyF",
+            "mangledName": "$s7SeonSDK19PhotoStorageServiceC11fetchPhotos7Combine12AnyPublisherVySaySo7UIImageCGAA0cD5ErrorOGyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deletePhoto",
+            "printedName": "deletePhoto(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(), SeonSDK.PhotoStorageError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhotoStorageError",
+                    "printedName": "SeonSDK.PhotoStorageError",
+                    "usr": "s:7SeonSDK17PhotoStorageErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK19PhotoStorageServiceC06deleteC02at7Combine12AnyPublisherVyytAA0cD5ErrorOGSi_tF",
+            "mangledName": "$s7SeonSDK19PhotoStorageServiceC06deleteC02at7Combine12AnyPublisherVyytAA0cD5ErrorOGSi_tF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7SeonSDK19PhotoStorageServiceC",
+        "mangledName": "$s7SeonSDK19PhotoStorageServiceC",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PhotoStorageProvider",
+            "printedName": "PhotoStorageProvider",
+            "usr": "s:7SeonSDK20PhotoStorageProviderP",
+            "mangledName": "$s7SeonSDK20PhotoStorageProviderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIImage",
+        "printedName": "UIKit.UIImage",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraViewModel",
+        "printedName": "CameraViewModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "capturedImage",
+            "printedName": "capturedImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC13capturedImageSo7UIImageCSgvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC13capturedImageSo7UIImageCSgvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC13capturedImageSo7UIImageCSgvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC13capturedImageSo7UIImageCSgvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC13capturedImageSo7UIImageCSgvs",
+                "mangledName": "$s7SeonSDK15CameraViewModelC13capturedImageSo7UIImageCSgvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC13capturedImageSo7UIImageCSgvM",
+                "mangledName": "$s7SeonSDK15CameraViewModelC13capturedImageSo7UIImageCSgvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$capturedImage",
+            "printedName": "$capturedImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Optional<UIKit.UIImage>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC14$capturedImage7Combine9PublishedV9PublisherVySo7UIImageCSg_Gvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC14$capturedImage7Combine9PublishedV9PublisherVySo7UIImageCSg_Gvp",
+            "moduleName": "SeonSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<UIKit.UIImage>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC14$capturedImage7Combine9PublishedV9PublisherVySo7UIImageCSg_Gvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC14$capturedImage7Combine9PublishedV9PublisherVySo7UIImageCSg_Gvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<UIKit.UIImage>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC14$capturedImage7Combine9PublishedV9PublisherVySo7UIImageCSg_Gvs",
+                "mangledName": "$s7SeonSDK15CameraViewModelC14$capturedImage7Combine9PublishedV9PublisherVySo7UIImageCSg_Gvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC14$capturedImage7Combine9PublishedV9PublisherVySo7UIImageCSg_GvM",
+                "mangledName": "$s7SeonSDK15CameraViewModelC14$capturedImage7Combine9PublishedV9PublisherVySo7UIImageCSg_GvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showError",
+            "printedName": "showError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC9showErrorSbvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC9showErrorSbvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC9showErrorSbvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC9showErrorSbvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC9showErrorSbvs",
+                "mangledName": "$s7SeonSDK15CameraViewModelC9showErrorSbvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC9showErrorSbvM",
+                "mangledName": "$s7SeonSDK15CameraViewModelC9showErrorSbvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$showError",
+            "printedName": "$showError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC10$showError7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC10$showError7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "SeonSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC10$showError7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC10$showError7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC10$showError7Combine9PublishedV9PublisherVySb_Gvs",
+                "mangledName": "$s7SeonSDK15CameraViewModelC10$showError7Combine9PublishedV9PublisherVySb_Gvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC10$showError7Combine9PublishedV9PublisherVySb_GvM",
+                "mangledName": "$s7SeonSDK15CameraViewModelC10$showError7Combine9PublishedV9PublisherVySb_GvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorMessage",
+            "printedName": "errorMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC12errorMessageSSvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC12errorMessageSSvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC12errorMessageSSvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC12errorMessageSSvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC12errorMessageSSvs",
+                "mangledName": "$s7SeonSDK15CameraViewModelC12errorMessageSSvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC12errorMessageSSvM",
+                "mangledName": "$s7SeonSDK15CameraViewModelC12errorMessageSSvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$errorMessage",
+            "printedName": "$errorMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.String>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC13$errorMessage7Combine9PublishedV9PublisherVySS_Gvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC13$errorMessage7Combine9PublishedV9PublisherVySS_Gvp",
+            "moduleName": "SeonSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.String>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC13$errorMessage7Combine9PublishedV9PublisherVySS_Gvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC13$errorMessage7Combine9PublishedV9PublisherVySS_Gvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.String>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC13$errorMessage7Combine9PublishedV9PublisherVySS_Gvs",
+                "mangledName": "$s7SeonSDK15CameraViewModelC13$errorMessage7Combine9PublishedV9PublisherVySS_Gvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC13$errorMessage7Combine9PublishedV9PublisherVySS_GvM",
+                "mangledName": "$s7SeonSDK15CameraViewModelC13$errorMessage7Combine9PublishedV9PublisherVySS_GvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCameraReady",
+            "printedName": "isCameraReady",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC02isC5ReadySbvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC02isC5ReadySbvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC02isC5ReadySbvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC02isC5ReadySbvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC02isC5ReadySbvs",
+                "mangledName": "$s7SeonSDK15CameraViewModelC02isC5ReadySbvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC02isC5ReadySbvM",
+                "mangledName": "$s7SeonSDK15CameraViewModelC02isC5ReadySbvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isCameraReady",
+            "printedName": "$isCameraReady",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC03$isC5Ready7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC03$isC5Ready7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "SeonSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC03$isC5Ready7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC03$isC5Ready7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC03$isC5Ready7Combine9PublishedV9PublisherVySb_Gvs",
+                "mangledName": "$s7SeonSDK15CameraViewModelC03$isC5Ready7Combine9PublishedV9PublisherVySb_Gvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC03$isC5Ready7Combine9PublishedV9PublisherVySb_GvM",
+                "mangledName": "$s7SeonSDK15CameraViewModelC03$isC5Ready7Combine9PublishedV9PublisherVySb_GvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cameraService",
+            "printedName": "cameraService",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraServiceProvider",
+                "printedName": "any SeonSDK.CameraServiceProvider",
+                "usr": "s:7SeonSDK21CameraServiceProviderP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC13cameraServiceAA0cG8Provider_pvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC13cameraServiceAA0cG8Provider_pvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraServiceProvider",
+                    "printedName": "any SeonSDK.CameraServiceProvider",
+                    "usr": "s:7SeonSDK21CameraServiceProviderP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC13cameraServiceAA0cG8Provider_pvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC13cameraServiceAA0cG8Provider_pvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraServiceProvider",
+                    "printedName": "any SeonSDK.CameraServiceProvider",
+                    "usr": "s:7SeonSDK21CameraServiceProviderP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC13cameraServiceAA0cG8Provider_pvs",
+                "mangledName": "$s7SeonSDK15CameraViewModelC13cameraServiceAA0cG8Provider_pvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC13cameraServiceAA0cG8Provider_pvM",
+                "mangledName": "$s7SeonSDK15CameraViewModelC13cameraServiceAA0cG8Provider_pvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cameraService:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraViewModel",
+                "printedName": "SeonSDK.CameraViewModel",
+                "usr": "s:7SeonSDK15CameraViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraServiceProvider",
+                "printedName": "any SeonSDK.CameraServiceProvider",
+                "hasDefaultArg": true,
+                "usr": "s:7SeonSDK21CameraServiceProviderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7SeonSDK15CameraViewModelC13cameraServiceAcA0cG8Provider_p_tcfc",
+            "mangledName": "$s7SeonSDK15CameraViewModelC13cameraServiceAcA0cG8Provider_p_tcfc",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "flashIcon",
+            "printedName": "flashIcon",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK15CameraViewModelC9flashIconSSvp",
+            "mangledName": "$s7SeonSDK15CameraViewModelC9flashIconSSvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK15CameraViewModelC9flashIconSSvg",
+                "mangledName": "$s7SeonSDK15CameraViewModelC9flashIconSSvg",
+                "moduleName": "SeonSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startCamera",
+            "printedName": "startCamera()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK15CameraViewModelC05startC0yyF",
+            "mangledName": "$s7SeonSDK15CameraViewModelC05startC0yyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopCamera",
+            "printedName": "stopCamera()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK15CameraViewModelC04stopC0yyF",
+            "mangledName": "$s7SeonSDK15CameraViewModelC04stopC0yyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFlash",
+            "printedName": "toggleFlash()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK15CameraViewModelC11toggleFlashyyF",
+            "mangledName": "$s7SeonSDK15CameraViewModelC11toggleFlashyyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "switchCamera",
+            "printedName": "switchCamera()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK15CameraViewModelC06switchC0yyF",
+            "mangledName": "$s7SeonSDK15CameraViewModelC06switchC0yyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "capturePhoto",
+            "printedName": "capturePhoto()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK15CameraViewModelC12capturePhotoyyF",
+            "mangledName": "$s7SeonSDK15CameraViewModelC12capturePhotoyyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7SeonSDK15CameraViewModelC",
+        "mangledName": "$s7SeonSDK15CameraViewModelC",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthServiceProvider",
+        "printedName": "AuthServiceProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "authenticate",
+            "printedName": "authenticate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.Bool, SeonSDK.AuthServiceError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthServiceError",
+                    "printedName": "SeonSDK.AuthServiceError",
+                    "usr": "s:7SeonSDK16AuthServiceErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK19AuthServiceProviderP12authenticate7Combine12AnyPublisherVySbAA0cD5ErrorOGyF",
+            "mangledName": "$s7SeonSDK19AuthServiceProviderP12authenticate7Combine12AnyPublisherVySbAA0cD5ErrorOGyF",
+            "moduleName": "SeonSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SeonSDK.AuthServiceProvider>",
+            "sugared_genericSig": "<Self where Self : SeonSDK.AuthServiceProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7SeonSDK19AuthServiceProviderP",
+        "mangledName": "$s7SeonSDK19AuthServiceProviderP",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthServiceError",
+        "printedName": "AuthServiceError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "biometricUnavailable",
+            "printedName": "biometricUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.AuthServiceError.Type) -> SeonSDK.AuthServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthServiceError",
+                    "printedName": "SeonSDK.AuthServiceError",
+                    "usr": "s:7SeonSDK16AuthServiceErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.AuthServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthServiceError",
+                        "printedName": "SeonSDK.AuthServiceError",
+                        "usr": "s:7SeonSDK16AuthServiceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK16AuthServiceErrorO20biometricUnavailableyA2CmF",
+            "mangledName": "$s7SeonSDK16AuthServiceErrorO20biometricUnavailableyA2CmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationFailed",
+            "printedName": "authenticationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.AuthServiceError.Type) -> (any Swift.Error) -> SeonSDK.AuthServiceError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> SeonSDK.AuthServiceError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthServiceError",
+                        "printedName": "SeonSDK.AuthServiceError",
+                        "usr": "s:7SeonSDK16AuthServiceErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.AuthServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthServiceError",
+                        "printedName": "SeonSDK.AuthServiceError",
+                        "usr": "s:7SeonSDK16AuthServiceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK16AuthServiceErrorO20authenticationFailedyACs0E0_pcACmF",
+            "mangledName": "$s7SeonSDK16AuthServiceErrorO20authenticationFailedyACs0E0_pcACmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unexpectedError",
+            "printedName": "unexpectedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SeonSDK.AuthServiceError.Type) -> SeonSDK.AuthServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthServiceError",
+                    "printedName": "SeonSDK.AuthServiceError",
+                    "usr": "s:7SeonSDK16AuthServiceErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SeonSDK.AuthServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthServiceError",
+                        "printedName": "SeonSDK.AuthServiceError",
+                        "usr": "s:7SeonSDK16AuthServiceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7SeonSDK16AuthServiceErrorO010unexpectedE0yA2CmF",
+            "mangledName": "$s7SeonSDK16AuthServiceErrorO010unexpectedE0yA2CmF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK16AuthServiceErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s7SeonSDK16AuthServiceErrorO16errorDescriptionSSSgvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK16AuthServiceErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s7SeonSDK16AuthServiceErrorO16errorDescriptionSSSgvg",
+                "moduleName": "SeonSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7SeonSDK16AuthServiceErrorO",
+        "mangledName": "$s7SeonSDK16AuthServiceErrorO",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIImage",
+        "printedName": "UIKit.UIImage",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraService",
+        "printedName": "CameraService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "flashMode",
+            "printedName": "flashMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlashMode",
+                "printedName": "AVFoundation.AVCaptureDevice.FlashMode",
+                "usr": "c:@E@AVCaptureFlashMode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SeonSDK13CameraServiceC9flashModeSo014AVCaptureFlashF0Vvp",
+            "mangledName": "$s7SeonSDK13CameraServiceC9flashModeSo014AVCaptureFlashF0Vvp",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlashMode",
+                    "printedName": "AVFoundation.AVCaptureDevice.FlashMode",
+                    "usr": "c:@E@AVCaptureFlashMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK13CameraServiceC9flashModeSo014AVCaptureFlashF0Vvg",
+                "mangledName": "$s7SeonSDK13CameraServiceC9flashModeSo014AVCaptureFlashF0Vvg",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlashMode",
+                    "printedName": "AVFoundation.AVCaptureDevice.FlashMode",
+                    "usr": "c:@E@AVCaptureFlashMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK13CameraServiceC9flashModeSo014AVCaptureFlashF0Vvs",
+                "mangledName": "$s7SeonSDK13CameraServiceC9flashModeSo014AVCaptureFlashF0Vvs",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SeonSDK13CameraServiceC9flashModeSo014AVCaptureFlashF0VvM",
+                "mangledName": "$s7SeonSDK13CameraServiceC9flashModeSo014AVCaptureFlashF0VvM",
+                "moduleName": "SeonSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraService",
+                "printedName": "SeonSDK.CameraService",
+                "usr": "c:@M@SeonSDK@objc(cs)CameraService"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SeonSDK@objc(cs)CameraService(im)init",
+            "mangledName": "$s7SeonSDK13CameraServiceCACycfc",
+            "moduleName": "SeonSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setupSession",
+            "printedName": "setupSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK13CameraServiceC12setupSessionyyF",
+            "mangledName": "$s7SeonSDK13CameraServiceC12setupSessionyyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "switchCamera",
+            "printedName": "switchCamera()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK13CameraServiceC06switchC0yyF",
+            "mangledName": "$s7SeonSDK13CameraServiceC06switchC0yyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFlashMode",
+            "printedName": "toggleFlashMode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK13CameraServiceC15toggleFlashModeyyF",
+            "mangledName": "$s7SeonSDK13CameraServiceC15toggleFlashModeyyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startSession",
+            "printedName": "startSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK13CameraServiceC12startSessionyyF",
+            "mangledName": "$s7SeonSDK13CameraServiceC12startSessionyyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopSession",
+            "printedName": "stopSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK13CameraServiceC11stopSessionyyF",
+            "mangledName": "$s7SeonSDK13CameraServiceC11stopSessionyyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "capturePhoto",
+            "printedName": "capturePhoto()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<UIKit.UIImage, SeonSDK.CameraServiceError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraServiceError",
+                    "printedName": "SeonSDK.CameraServiceError",
+                    "usr": "s:7SeonSDK18CameraServiceErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK13CameraServiceC12capturePhoto7Combine12AnyPublisherVySo7UIImageCAA0cD5ErrorOGyF",
+            "mangledName": "$s7SeonSDK13CameraServiceC12capturePhoto7Combine12AnyPublisherVySo7UIImageCAA0cD5ErrorOGyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPreviewLayer",
+            "printedName": "getPreviewLayer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVCaptureVideoPreviewLayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCaptureVideoPreviewLayer",
+                    "printedName": "AVFoundation.AVCaptureVideoPreviewLayer",
+                    "usr": "c:objc(cs)AVCaptureVideoPreviewLayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK13CameraServiceC15getPreviewLayerSo014AVCaptureVideofG0CSgyF",
+            "mangledName": "$s7SeonSDK13CameraServiceC15getPreviewLayerSo014AVCaptureVideofG0CSgyF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "photoOutput",
+            "printedName": "photoOutput(_:didFinishProcessingPhoto:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoOutput",
+                "printedName": "AVFoundation.AVCapturePhotoOutput",
+                "usr": "c:objc(cs)AVCapturePhotoOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhoto",
+                "printedName": "AVFoundation.AVCapturePhoto",
+                "usr": "c:objc(cs)AVCapturePhoto"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SeonSDK@objc(cs)CameraService(im)captureOutput:didFinishProcessingPhoto:error:",
+            "mangledName": "$s7SeonSDK13CameraServiceC11photoOutput_24didFinishProcessingPhoto5errorySo09AVCapturejF0C_So0lJ0Cs5Error_pSgtF",
+            "moduleName": "SeonSDK",
+            "objc_name": "captureOutput:didFinishProcessingPhoto:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SeonSDK@objc(cs)CameraService",
+        "mangledName": "$s7SeonSDK13CameraServiceC",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CameraServiceProvider",
+            "printedName": "CameraServiceProvider",
+            "usr": "s:7SeonSDK21CameraServiceProviderP",
+            "mangledName": "$s7SeonSDK21CameraServiceProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SeonSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PhotoSDK",
+        "printedName": "PhotoSDK",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(authService:photoStorageService:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PhotoSDK",
+                "printedName": "SeonSDK.PhotoSDK",
+                "usr": "s:7SeonSDK05PhotoB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AuthServiceProvider",
+                "printedName": "any SeonSDK.AuthServiceProvider",
+                "hasDefaultArg": true,
+                "usr": "s:7SeonSDK19AuthServiceProviderP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PhotoStorageProvider",
+                "printedName": "any SeonSDK.PhotoStorageProvider",
+                "hasDefaultArg": true,
+                "usr": "s:7SeonSDK20PhotoStorageProviderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7SeonSDK05PhotoB0C11authService012photoStorageE0AcA04AuthE8Provider_p_AA0cgI0_ptcfc",
+            "mangledName": "$s7SeonSDK05PhotoB0C11authService012photoStorageE0AcA04AuthE8Provider_p_AA0cgI0_ptcfc",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "takePhoto",
+            "printedName": "takePhoto(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<UIKit.UIImage, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<UIKit.UIImage, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK05PhotoB0C04takeC010completionQrys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "mangledName": "$s7SeonSDK05PhotoB0C04takeC010completionQrys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessPhotos",
+            "printedName": "accessPhotos(onAuthenticated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<SwiftUI.AnyView, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<SwiftUI.AnyView, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyView",
+                        "printedName": "SwiftUI.AnyView",
+                        "usr": "s:7SwiftUI7AnyViewV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SeonSDK05PhotoB0C12accessPhotos15onAuthenticatedyys6ResultOy7SwiftUI7AnyViewVs5Error_pGc_tF",
+            "mangledName": "$s7SeonSDK05PhotoB0C12accessPhotos15onAuthenticatedyys6ResultOy7SwiftUI7AnyViewVs5Error_pGc_tF",
+            "moduleName": "SeonSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7SeonSDK05PhotoB0C",
+        "mangledName": "$s7SeonSDK05PhotoB0C",
+        "moduleName": "SeonSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/amit\/Documents\/Interview_Prep\/SEON\/SeonSDK\/SeonSDK\/Gallery\/GalleryViewModel.swift",
+      "kind": "Array",
+      "offset": 546,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit\/Documents\/Interview_Prep\/SEON\/SeonSDK\/SeonSDK\/Gallery\/GalleryViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 756,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit\/Documents\/Interview_Prep\/SEON\/SeonSDK\/SeonSDK\/Service\/PhotoStorageService.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 13,
+      "value": "\"SavedPhotos\""
+    },
+    {
+      "filePath": "\/Users\/amit\/Documents\/Interview_Prep\/SEON\/SeonSDK\/SeonSDK\/Camera\/CameraViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 753,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit\/Documents\/Interview_Prep\/SEON\/SeonSDK\/SeonSDK\/Camera\/CameraViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 875,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit\/Documents\/Interview_Prep\/SEON\/SeonSDK\/SeonSDK\/Camera\/CameraViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1010,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

@@ -1,2 +1,3 @@
 # SeonSDK iOS App
-A sample iOS Application that integrates SeonSDK framework
+
+A Sample App that integrates [SeonSDK iOS Framework](https://github.com/ronstorm/seonsdk-ios).
